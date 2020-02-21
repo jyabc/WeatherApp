@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SafeAreaView, View, Text, Alert } from 'react-native';
+import { View, Text, Alert } from 'react-native';
 import moment from 'moment';
 import 'moment-timezone';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -163,7 +163,7 @@ export default class Home extends Component {
     render() {
         const { time, temp, weather, forecastList } = this.state;
         return (
-            <SafeAreaView style={{ flex: 1 }}>
+            <>
                 <CustomHeader text={'Singapore, Singapore'} />
 
                 <View style={styles.mainContainer}>
@@ -185,7 +185,7 @@ export default class Home extends Component {
                         ))
                     }
                 </ScrollView>
-            </SafeAreaView>
+            </>
         );
     }
 };

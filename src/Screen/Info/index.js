@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Text, SafeAreaView } from 'react-native';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 
 export default class Info extends Component {
 
@@ -18,7 +17,7 @@ export default class Info extends Component {
     render() {
         const { info } = this.state;
         return (
-            <SafeAreaView>
+            <>
                 <CustomHeader text={info.date} backBtn navigation={this.props.navigation} />
 
                 <View style={{ alignItems: 'center', paddingTop: 20 }}>
@@ -26,7 +25,7 @@ export default class Info extends Component {
                     <Text style={{ fontFamily: "VINCHAND", fontSize: 50 }}>{info.temp}</Text>
                     <Text style={{ fontFamily: "VINCHAND", fontSize: 60 }}>{info.weather}</Text>
                 </View>
-            </SafeAreaView>
+            </>
         );
     }
 }

@@ -4,4 +4,4 @@ const Colors = {
     subText: '#9C9C9C',
     red: '#ED4334'
   };
-  module.exports = Colors ;
+  module.exports = Colors;

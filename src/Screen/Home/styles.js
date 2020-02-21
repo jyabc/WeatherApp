@@ -6,5 +6,10 @@ export default {
     },
     subText: {
         color: Colors.subText,
+    },
+    mainContainer: {
+        alignItems: 'center',
+        paddingTop: 20,
+        paddingBottom: 35
     }
 };

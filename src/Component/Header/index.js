@@ -5,7 +5,7 @@ import { View } from 'react-native';
 
 export default CustomHeader = (props) => {
     const backBtn = props.backBtn && {
-        leftComponent: {icon: 'chevron-left', color: '#fff', size:30 ,onPress: ()=> props.navigation.goBack() }
+        leftComponent: {icon: 'chevron-left', color: '#fff', size:30, onPress: ()=> props.navigation.goBack(), underlayColor: Colors.red }
     };
 
     return (
